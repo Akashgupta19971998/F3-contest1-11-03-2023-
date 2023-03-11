@@ -20,7 +20,11 @@ longJump(newData, highJump)
 
   function longJump(data, highJump){
 var newData={...data};
-console.log("3")
+setTimeout(() => {
+  var newData={...data}
+  console.log("3")
+}, 2000);
+
 highJump(newData, AwardCeremony)
   }
 
